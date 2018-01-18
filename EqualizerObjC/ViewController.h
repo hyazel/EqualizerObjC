@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIImageView *ivEq;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *scEq;
 
 @end
 

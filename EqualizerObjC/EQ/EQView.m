@@ -29,17 +29,13 @@ float scalingY = 0.75;
     if (self = [super init]) {
         
         self.frame = CGRectMake(0, 2*d*(int)(v.frame.size.height*(1-hmax)/(2*d)), v.frame.size.width, v.frame.size.height - 2*d*(int)(v.frame.size.height*(1-hmax)/(2*d)));
-        
-        // d=4 hmax=0.4
-        
-        
         numberOfDotsX = self.frame.size.width / (scalingY*d);
         numberOfDotsY = self.frame.size.height / d;
         distanceBetweenDots = d;
         dotSize = s;
         imageViews = [NSMutableArray array];
         
-        //[self createBackground];
+        [self createBackground];
         [self createWave];
         [self setGradient:g];
         
@@ -88,18 +84,13 @@ float scalingY = 0.75;
     
     for (CALayer *column in self.layer.sublayers) {
         
-        
-        
-        
         int r = numberOfDotsY * [wave getValue:(float)i/numberOfDotsX time:t withBPM:bpm] * distanceBetweenDots;
         // Stay in the view...
         r = MIN(r, self.frame.size.height);
         r = MAX(r, 0);
         
-        
         column.frame = CGRectMake(scalingY*i*distanceBetweenDots, self.frame.size.height-r, scalingY*distanceBetweenDots, r);
-//        column.contentsRect = CGRectMake(0.5*((i+1)%2), 1-(float)r/self.frame.size.height, 0.5, (float)r/self.frame.size.height);
-        column.contentsRect = CGRectMake(0.4*((i+1)%2), 0.7, 0.5, (float)r/self.frame.size.height);
+        column.contentsRect = CGRectMake(0.5*((i+1)%2), 1-(float)r/self.frame.size.height, 0.5, (float)r/self.frame.size.height);
         i++;
     }
     
@@ -123,24 +114,13 @@ float scalingY = 0.75;
 - (void)setGradient:(int)g {
     
     CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-    
-    
-    gradientLayer.frame = CGRectMake(0, 0,scalingY*2*distanceBetweenDots, self.frame.size.height);
+    gradientLayer.frame = CGRectMake(0, 0, scalingY*2*distanceBetweenDots, self.frame.size.height);
     gradientLayer.mask = [CALayer layer];
-    
-    NSLog(@"%f",scalingY*2*distanceBetweenDots);
-    
     
     for (int j = 0; j < numberOfDotsY; j++) {
         
         CAShapeLayer *circleLayer = [CAShapeLayer layer];
-//        [circleLayer setPath:[[UIBezierPath bezierPathWithOvalInRect:CGRectMake(scalingY*((j+1)%2)*distanceBetweenDots, self.frame.size.height - (j-1)*distanceBetweenDots - dotSize, dotSize, dotSize)] CGPath]];
-
-        [circleLayer setPath:[[UIBezierPath bezierPathWithOvalInRect:CGRectMake(5, self.frame.size.height - (j-1)*distanceBetweenDots - dotSize, dotSize, dotSize)] CGPath]];
-        
-        
-        NSLog(@"%d : %f",j,self.frame.size.height - (j-1)*distanceBetweenDots - dotSize);
-        
+        [circleLayer setPath:[[UIBezierPath bezierPathWithOvalInRect:CGRectMake(scalingY*((j+1)%2)*distanceBetweenDots, self.frame.size.height - (j-1)*distanceBetweenDots - dotSize, dotSize, dotSize)] CGPath]];
         circleLayer.fillColor = [UIColor colorWithWhite:1.0 alpha:1.0].CGColor;
         [gradientLayer.mask addSublayer:circleLayer];
     }

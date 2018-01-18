@@ -14,7 +14,7 @@
 static int const EQFps = 25;
 static float const EQTransitionTime = 0.5;
 static float const EQDecayTime = 1.0;
-
+static int globalBpm = 120;
 
 
 @interface EQController (){
@@ -94,11 +94,7 @@ static float const EQDecayTime = 1.0;
 - (void)ticker {
     
     //[wave generateNoise];
-    NSLog(@"time 1 : %f",[[transitionTimer fireDate] timeIntervalSinceDate:self.firstBeat]);
-    NSLog(@"time 2 : %f",[transitionTimer timeInterval]);
-    NSLog(@"result : %f",[[transitionTimer fireDate] timeIntervalSinceDate:self.firstBeat]-[transitionTimer timeInterval]);
-    
-    [self.equalizerView displayWave:wave time:[[transitionTimer fireDate] timeIntervalSinceDate:self.firstBeat]-[transitionTimer timeInterval] withBPM:120];
+    [self.equalizerView displayWave:wave time:[[transitionTimer fireDate] timeIntervalSinceDate:self.firstBeat]-[transitionTimer timeInterval] withBPM:globalBpm];
     [wave progress];
 }
 

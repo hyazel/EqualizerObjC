@@ -14,18 +14,41 @@
 
 @end
 
-@implementation ViewController
+@implementation ViewController{
+    EQController *eqC;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    EQView *eqV = [[EQView alloc] initWithView:self.ivEq andDotSize:6 andDistanceBetweenDots:4 andWaveHeight:0.4 andGradient:1];
-    EQController *eqC = [[EQController alloc] initWithView:eqV];
+    EQView *eqV = [[EQView alloc] initWithView:self.ivEq andDotSize:3 andDistanceBetweenDots:4 andWaveHeight:0.8 andGradient:1];
+    eqC = [[EQController alloc] initWithView:eqV];
     
-    [eqC clip:2];
+    [eqC clip:1];
     [eqC start];
      
 }
+
+
+- (IBAction)scChanged:(id)sender {
+    if(self.scEq.selectedSegmentIndex==0){
+        [eqC clip:0];
+    }
+    else if(self.scEq.selectedSegmentIndex==1){
+        [eqC clip:1];
+    }
+    else if(self.scEq.selectedSegmentIndex==1){
+        [eqC clip:2];
+    }
+    else if(self.scEq.selectedSegmentIndex==1){
+        [eqC clip:3];
+    }
+    else{
+        [eqC clip:4];
+    }
+}
+
+
 
 
 - (void)didReceiveMemoryWarning {

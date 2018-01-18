@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,28 +15,50 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hdA-fk-E73">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="382"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="F6K-j8-6Xe"/>
-                                    <constraint firstAttribute="height" constant="569" id="q17-fV-Ymz"/>
+                                    <constraint firstAttribute="width" constant="320" id="59F-q1-zgP"/>
+                                    <constraint firstAttribute="height" constant="382" id="BFg-7R-ZeR"/>
                                 </constraints>
                             </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="qPg-Io-2eh">
+                                <rect key="frame" x="42" y="419" width="235" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="Qmy-6u-npH"/>
+                                    <constraint firstAttribute="width" constant="235" id="jJJ-5d-WJD"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="0"/>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                </segments>
+                                <color key="tintColor" red="0.1321769357" green="0.1337202489" blue="0.1738251448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="scChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="jdf-Kz-in5"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hdA-fk-E73" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EZl-MU-ARq"/>
-                            <constraint firstItem="hdA-fk-E73" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JG2-EL-ILA"/>
-                            <constraint firstItem="hdA-fk-E73" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="K0i-hj-7Kh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hdA-fk-E73" secondAttribute="bottom" constant="98" id="OHa-b9-X2x"/>
+                            <constraint firstItem="qPg-Io-2eh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="GaW-4J-Vve"/>
+                            <constraint firstItem="hdA-fk-E73" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Hdt-v6-xd7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qPg-Io-2eh" secondAttribute="bottom" constant="34" id="NjQ-9v-iaM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qPg-Io-2eh" secondAttribute="trailing" constant="43" id="RaI-ok-Kjw"/>
+                            <constraint firstItem="hdA-fk-E73" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XoQ-AJ-Kaf"/>
+                            <constraint firstItem="qPg-Io-2eh" firstAttribute="top" secondItem="hdA-fk-E73" secondAttribute="bottom" constant="37" id="aUZ-vq-R1C"/>
+                            <constraint firstItem="hdA-fk-E73" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tf5-u3-9Co"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="ivEq" destination="hdA-fk-E73" id="EGu-hi-HgV"/>
+                        <outlet property="scEq" destination="qPg-Io-2eh" id="iPF-Kx-3Vo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

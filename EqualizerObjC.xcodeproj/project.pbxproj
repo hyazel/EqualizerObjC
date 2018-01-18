@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E48EA73E2011009000B2AB52 /* EQView.m in Sources */ = {isa = PBXBuildFile; fileRef = E48EA73D2011009000B2AB52 /* EQView.m */; };
 		E4904B0A1FE17F4F0005A1DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B091FE17F4F0005A1DA /* AppDelegate.m */; };
 		E4904B0D1FE17F4F0005A1DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B0C1FE17F4F0005A1DA /* ViewController.m */; };
 		E4904B101FE17F4F0005A1DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4904B0E1FE17F4F0005A1DA /* Main.storyboard */; };
@@ -17,7 +18,6 @@
 		E4904B361FE180070005A1DA /* EQPerlinNoise.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B211FE180040005A1DA /* EQPerlinNoise.m */; };
 		E4904B371FE180070005A1DA /* EQControllerWithPlayback.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B231FE180040005A1DA /* EQControllerWithPlayback.m */; };
 		E4904B381FE180070005A1DA /* EQWavePack.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B241FE180040005A1DA /* EQWavePack.m */; };
-		E4904B391FE180070005A1DA /* EQView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B271FE180040005A1DA /* EQView.m */; };
 		E4904B3A1FE180070005A1DA /* EQWaveCombination.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B2C1FE180050005A1DA /* EQWaveCombination.m */; };
 		E4904B3B1FE180070005A1DA /* EQWaveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B2E1FE180050005A1DA /* EQWaveTransition.m */; };
 		E4904B3C1FE180070005A1DA /* EQController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B301FE180060005A1DA /* EQController.m */; };
@@ -27,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E48EA73C2011009000B2AB52 /* EQView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQView.h; sourceTree = "<group>"; };
+		E48EA73D2011009000B2AB52 /* EQView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQView.m; sourceTree = "<group>"; };
 		E4904B051FE17F4E0005A1DA /* EqualizerObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EqualizerObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4904B081FE17F4F0005A1DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E4904B091FE17F4F0005A1DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,13 +47,11 @@
 		E4904B241FE180040005A1DA /* EQWavePack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQWavePack.m; sourceTree = "<group>"; };
 		E4904B251FE180040005A1DA /* EQElementaryWaveShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQElementaryWaveShape.h; sourceTree = "<group>"; };
 		E4904B261FE180040005A1DA /* EQWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQWave.h; sourceTree = "<group>"; };
-		E4904B271FE180040005A1DA /* EQView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQView.m; sourceTree = "<group>"; };
 		E4904B281FE180040005A1DA /* EQPerlinNoise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQPerlinNoise.h; sourceTree = "<group>"; };
 		E4904B291FE180050005A1DA /* EQDesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQDesign.h; sourceTree = "<group>"; };
 		E4904B2A1FE180050005A1DA /* EQController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQController.h; sourceTree = "<group>"; };
 		E4904B2B1FE180050005A1DA /* EQWaveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQWaveTransition.h; sourceTree = "<group>"; };
 		E4904B2C1FE180050005A1DA /* EQWaveCombination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQWaveCombination.m; sourceTree = "<group>"; };
-		E4904B2D1FE180050005A1DA /* EQView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQView.h; sourceTree = "<group>"; };
 		E4904B2E1FE180050005A1DA /* EQWaveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQWaveTransition.m; sourceTree = "<group>"; };
 		E4904B2F1FE180060005A1DA /* EQADSRWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQADSRWave.h; sourceTree = "<group>"; };
 		E4904B301FE180060005A1DA /* EQController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQController.m; sourceTree = "<group>"; };
@@ -120,8 +120,8 @@
 				E4904B331FE180070005A1DA /* EQElementaryWaveShape.m */,
 				E4904B281FE180040005A1DA /* EQPerlinNoise.h */,
 				E4904B211FE180040005A1DA /* EQPerlinNoise.m */,
-				E4904B2D1FE180050005A1DA /* EQView.h */,
-				E4904B271FE180040005A1DA /* EQView.m */,
+				E48EA73C2011009000B2AB52 /* EQView.h */,
+				E48EA73D2011009000B2AB52 /* EQView.m */,
 				E4904B261FE180040005A1DA /* EQWave.h */,
 				E4904B201FE180040005A1DA /* EQWave.m */,
 				E4904B1F1FE180040005A1DA /* EQWaveCombination.h */,
@@ -205,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E48EA73E2011009000B2AB52 /* EQView.m in Sources */,
 				E4904B3A1FE180070005A1DA /* EQWaveCombination.m in Sources */,
 				E4904B371FE180070005A1DA /* EQControllerWithPlayback.m in Sources */,
 				E4904B351FE180070005A1DA /* EQWave.m in Sources */,
@@ -212,7 +213,6 @@
 				E4904B3E1FE180070005A1DA /* EQDesign.m in Sources */,
 				E4904B381FE180070005A1DA /* EQWavePack.m in Sources */,
 				E4904B3B1FE180070005A1DA /* EQWaveTransition.m in Sources */,
-				E4904B391FE180070005A1DA /* EQView.m in Sources */,
 				E4904B361FE180070005A1DA /* EQPerlinNoise.m in Sources */,
 				E4904B181FE17F4F0005A1DA /* main.m in Sources */,
 				E4904B0A1FE17F4F0005A1DA /* AppDelegate.m in Sources */,
