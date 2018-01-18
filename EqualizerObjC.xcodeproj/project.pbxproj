@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4904B0A1FE17F4F0005A1DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B091FE17F4F0005A1DA /* AppDelegate.m */; };
+		E4904B0D1FE17F4F0005A1DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B0C1FE17F4F0005A1DA /* ViewController.m */; };
+		E4904B101FE17F4F0005A1DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4904B0E1FE17F4F0005A1DA /* Main.storyboard */; };
+		E4904B121FE17F4F0005A1DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4904B111FE17F4F0005A1DA /* Assets.xcassets */; };
+		E4904B151FE17F4F0005A1DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4904B131FE17F4F0005A1DA /* LaunchScreen.storyboard */; };
+		E4904B181FE17F4F0005A1DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B171FE17F4F0005A1DA /* main.m */; };
+		E4904B351FE180070005A1DA /* EQWave.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B201FE180040005A1DA /* EQWave.m */; };
+		E4904B361FE180070005A1DA /* EQPerlinNoise.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B211FE180040005A1DA /* EQPerlinNoise.m */; };
+		E4904B371FE180070005A1DA /* EQControllerWithPlayback.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B231FE180040005A1DA /* EQControllerWithPlayback.m */; };
+		E4904B381FE180070005A1DA /* EQWavePack.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B241FE180040005A1DA /* EQWavePack.m */; };
+		E4904B391FE180070005A1DA /* EQView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B271FE180040005A1DA /* EQView.m */; };
+		E4904B3A1FE180070005A1DA /* EQWaveCombination.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B2C1FE180050005A1DA /* EQWaveCombination.m */; };
+		E4904B3B1FE180070005A1DA /* EQWaveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B2E1FE180050005A1DA /* EQWaveTransition.m */; };
+		E4904B3C1FE180070005A1DA /* EQController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B301FE180060005A1DA /* EQController.m */; };
+		E4904B3D1FE180070005A1DA /* EQADSRWave.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B311FE180060005A1DA /* EQADSRWave.m */; };
+		E4904B3E1FE180070005A1DA /* EQDesign.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B321FE180060005A1DA /* EQDesign.m */; };
+		E4904B3F1FE180070005A1DA /* EQElementaryWaveShape.m in Sources */ = {isa = PBXBuildFile; fileRef = E4904B331FE180070005A1DA /* EQElementaryWaveShape.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E4904B051FE17F4E0005A1DA /* EqualizerObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EqualizerObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4904B081FE17F4F0005A1DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E4904B091FE17F4F0005A1DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E4904B0B1FE17F4F0005A1DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E4904B0C1FE17F4F0005A1DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E4904B0F1FE17F4F0005A1DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4904B111FE17F4F0005A1DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4904B141FE17F4F0005A1DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E4904B161FE17F4F0005A1DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4904B171FE17F4F0005A1DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E4904B1F1FE180040005A1DA /* EQWaveCombination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQWaveCombination.h; sourceTree = "<group>"; };
+		E4904B201FE180040005A1DA /* EQWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQWave.m; sourceTree = "<group>"; };
+		E4904B211FE180040005A1DA /* EQPerlinNoise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQPerlinNoise.m; sourceTree = "<group>"; };
+		E4904B221FE180040005A1DA /* EQWavePack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQWavePack.h; sourceTree = "<group>"; };
+		E4904B231FE180040005A1DA /* EQControllerWithPlayback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQControllerWithPlayback.m; sourceTree = "<group>"; };
+		E4904B241FE180040005A1DA /* EQWavePack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQWavePack.m; sourceTree = "<group>"; };
+		E4904B251FE180040005A1DA /* EQElementaryWaveShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQElementaryWaveShape.h; sourceTree = "<group>"; };
+		E4904B261FE180040005A1DA /* EQWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQWave.h; sourceTree = "<group>"; };
+		E4904B271FE180040005A1DA /* EQView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQView.m; sourceTree = "<group>"; };
+		E4904B281FE180040005A1DA /* EQPerlinNoise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQPerlinNoise.h; sourceTree = "<group>"; };
+		E4904B291FE180050005A1DA /* EQDesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQDesign.h; sourceTree = "<group>"; };
+		E4904B2A1FE180050005A1DA /* EQController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQController.h; sourceTree = "<group>"; };
+		E4904B2B1FE180050005A1DA /* EQWaveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQWaveTransition.h; sourceTree = "<group>"; };
+		E4904B2C1FE180050005A1DA /* EQWaveCombination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQWaveCombination.m; sourceTree = "<group>"; };
+		E4904B2D1FE180050005A1DA /* EQView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQView.h; sourceTree = "<group>"; };
+		E4904B2E1FE180050005A1DA /* EQWaveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQWaveTransition.m; sourceTree = "<group>"; };
+		E4904B2F1FE180060005A1DA /* EQADSRWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQADSRWave.h; sourceTree = "<group>"; };
+		E4904B301FE180060005A1DA /* EQController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQController.m; sourceTree = "<group>"; };
+		E4904B311FE180060005A1DA /* EQADSRWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQADSRWave.m; sourceTree = "<group>"; };
+		E4904B321FE180060005A1DA /* EQDesign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQDesign.m; sourceTree = "<group>"; };
+		E4904B331FE180070005A1DA /* EQElementaryWaveShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQElementaryWaveShape.m; sourceTree = "<group>"; };
+		E4904B341FE180070005A1DA /* EQControllerWithPlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQControllerWithPlayback.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4904B021FE17F4E0005A1DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4904AFC1FE17F4E0005A1DA = {
+			isa = PBXGroup;
+			children = (
+				E4904B071FE17F4E0005A1DA /* EqualizerObjC */,
+				E4904B061FE17F4E0005A1DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4904B061FE17F4E0005A1DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4904B051FE17F4E0005A1DA /* EqualizerObjC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4904B071FE17F4E0005A1DA /* EqualizerObjC */ = {
+			isa = PBXGroup;
+			children = (
+				E4904B081FE17F4F0005A1DA /* AppDelegate.h */,
+				E4904B091FE17F4F0005A1DA /* AppDelegate.m */,
+				E4904B0B1FE17F4F0005A1DA /* ViewController.h */,
+				E4904B0C1FE17F4F0005A1DA /* ViewController.m */,
+				E4904B1E1FE17FBD0005A1DA /* EQ */,
+				E4904B0E1FE17F4F0005A1DA /* Main.storyboard */,
+				E4904B111FE17F4F0005A1DA /* Assets.xcassets */,
+				E4904B131FE17F4F0005A1DA /* LaunchScreen.storyboard */,
+				E4904B161FE17F4F0005A1DA /* Info.plist */,
+				E4904B171FE17F4F0005A1DA /* main.m */,
+			);
+			path = EqualizerObjC;
+			sourceTree = "<group>";
+		};
+		E4904B1E1FE17FBD0005A1DA /* EQ */ = {
+			isa = PBXGroup;
+			children = (
+				E4904B2F1FE180060005A1DA /* EQADSRWave.h */,
+				E4904B311FE180060005A1DA /* EQADSRWave.m */,
+				E4904B2A1FE180050005A1DA /* EQController.h */,
+				E4904B301FE180060005A1DA /* EQController.m */,
+				E4904B341FE180070005A1DA /* EQControllerWithPlayback.h */,
+				E4904B231FE180040005A1DA /* EQControllerWithPlayback.m */,
+				E4904B291FE180050005A1DA /* EQDesign.h */,
+				E4904B321FE180060005A1DA /* EQDesign.m */,
+				E4904B251FE180040005A1DA /* EQElementaryWaveShape.h */,
+				E4904B331FE180070005A1DA /* EQElementaryWaveShape.m */,
+				E4904B281FE180040005A1DA /* EQPerlinNoise.h */,
+				E4904B211FE180040005A1DA /* EQPerlinNoise.m */,
+				E4904B2D1FE180050005A1DA /* EQView.h */,
+				E4904B271FE180040005A1DA /* EQView.m */,
+				E4904B261FE180040005A1DA /* EQWave.h */,
+				E4904B201FE180040005A1DA /* EQWave.m */,
+				E4904B1F1FE180040005A1DA /* EQWaveCombination.h */,
+				E4904B2C1FE180050005A1DA /* EQWaveCombination.m */,
+				E4904B221FE180040005A1DA /* EQWavePack.h */,
+				E4904B241FE180040005A1DA /* EQWavePack.m */,
+				E4904B2B1FE180050005A1DA /* EQWaveTransition.h */,
+				E4904B2E1FE180050005A1DA /* EQWaveTransition.m */,
+			);
+			path = EQ;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4904B041FE17F4E0005A1DA /* EqualizerObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4904B1B1FE17F4F0005A1DA /* Build configuration list for PBXNativeTarget "EqualizerObjC" */;
+			buildPhases = (
+				E4904B011FE17F4E0005A1DA /* Sources */,
+				E4904B021FE17F4E0005A1DA /* Frameworks */,
+				E4904B031FE17F4E0005A1DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EqualizerObjC;
+			productName = EqualizerObjC;
+			productReference = E4904B051FE17F4E0005A1DA /* EqualizerObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4904AFD1FE17F4E0005A1DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Gluten;
+				TargetAttributes = {
+					E4904B041FE17F4E0005A1DA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E4904B001FE17F4E0005A1DA /* Build configuration list for PBXProject "EqualizerObjC" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4904AFC1FE17F4E0005A1DA;
+			productRefGroup = E4904B061FE17F4E0005A1DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4904B041FE17F4E0005A1DA /* EqualizerObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4904B031FE17F4E0005A1DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4904B151FE17F4F0005A1DA /* LaunchScreen.storyboard in Resources */,
+				E4904B121FE17F4F0005A1DA /* Assets.xcassets in Resources */,
+				E4904B101FE17F4F0005A1DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4904B011FE17F4E0005A1DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4904B3A1FE180070005A1DA /* EQWaveCombination.m in Sources */,
+				E4904B371FE180070005A1DA /* EQControllerWithPlayback.m in Sources */,
+				E4904B351FE180070005A1DA /* EQWave.m in Sources */,
+				E4904B0D1FE17F4F0005A1DA /* ViewController.m in Sources */,
+				E4904B3E1FE180070005A1DA /* EQDesign.m in Sources */,
+				E4904B381FE180070005A1DA /* EQWavePack.m in Sources */,
+				E4904B3B1FE180070005A1DA /* EQWaveTransition.m in Sources */,
+				E4904B391FE180070005A1DA /* EQView.m in Sources */,
+				E4904B361FE180070005A1DA /* EQPerlinNoise.m in Sources */,
+				E4904B181FE17F4F0005A1DA /* main.m in Sources */,
+				E4904B0A1FE17F4F0005A1DA /* AppDelegate.m in Sources */,
+				E4904B3D1FE180070005A1DA /* EQADSRWave.m in Sources */,
+				E4904B3F1FE180070005A1DA /* EQElementaryWaveShape.m in Sources */,
+				E4904B3C1FE180070005A1DA /* EQController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E4904B0E1FE17F4F0005A1DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4904B0F1FE17F4F0005A1DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E4904B131FE17F4F0005A1DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4904B141FE17F4F0005A1DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4904B191FE17F4F0005A1DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E4904B1A1FE17F4F0005A1DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4904B1C1FE17F4F0005A1DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LM3MF7C8H;
+				INFOPLIST_FILE = EqualizerObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EqualizerObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4904B1D1FE17F4F0005A1DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LM3MF7C8H;
+				INFOPLIST_FILE = EqualizerObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EqualizerObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4904B001FE17F4E0005A1DA /* Build configuration list for PBXProject "EqualizerObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4904B191FE17F4F0005A1DA /* Debug */,
+				E4904B1A1FE17F4F0005A1DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4904B1B1FE17F4F0005A1DA /* Build configuration list for PBXNativeTarget "EqualizerObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4904B1C1FE17F4F0005A1DA /* Debug */,
+				E4904B1D1FE17F4F0005A1DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4904AFD1FE17F4E0005A1DA /* Project object */;
+}
